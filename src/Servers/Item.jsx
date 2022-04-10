@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Button } from "grommet";
-import { Play } from "grommet-icons";
+import { Box } from "grommet";
+
+import Flag from "Shared/Flag";
 import ServerInfoRow from "./InfoRow";
 import FavoriteIcon from "Favorite/Icon";
 
@@ -25,7 +26,7 @@ const Item = ({
         }
         mapInfo={data.map}
         playersInfo={`${data.players}/${data.maxPlayers}`}
-        controls={<Button plain icon={<Play />} />}
+        locationInfo={<Flag  countryCode={data.countryCode} />}
       />
       <Box>
         {data.name} <br />

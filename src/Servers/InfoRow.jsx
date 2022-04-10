@@ -5,7 +5,7 @@ export default ({
   favoriteControl,
   playersInfo,
   mapInfo,
-  controls,
+  locationInfo,
   ...restProps
 }) => {
   return (
@@ -15,8 +15,8 @@ export default ({
         {mapInfo}
       </Box>
       <Box width="130px">{playersInfo}</Box>
-      <Box align="flex-end" width="70px">
-        {controls}
+      <Box align="flex-end" width="100px">
+        {locationInfo}
       </Box>
     </Box>
   );

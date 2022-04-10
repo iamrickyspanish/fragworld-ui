@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from "Shared/axios";
 
 export const getGames = async () => {
-  const res = await axios.get("https://frag.world/api/games");
+  const res = await axios.get("/games");
   return res?.data;
 };

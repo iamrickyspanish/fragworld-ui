@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Layer, Text, Spinner } from "grommet";
-import { Refresh, Close, Filter } from "grommet-icons";
+import { Refresh, Close, Filter, Location } from "grommet-icons";
 import { useQuery } from "react-query";
 
 import FavoriteIcon from "Favorite/Icon";
@@ -181,15 +181,7 @@ const Head = () => {
         }
         mapInfo="map"
         playersInfo="players"
-        // controls={
-        //   <Box margin={{ left: "auto" }} as="a" href={false}>
-        //     <Button
-        //       onClick={handleRefresh}
-        //       icon={isFetching ? <Spinner /> : <Refresh />}
-        //       plain
-        //     />
-        //   </Box>
-        // }
+        locationInfo={<Location />}
       />
     </Box>
   );
